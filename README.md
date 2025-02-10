@@ -2,8 +2,6 @@
 
 Dans un contexte où les applications web doivent être à la fois performantes, bien référencées, accessibles et sécurisées, le choix de la technologie de développement est crucial. Traditionnellement, React, qui exploite le DOM natif, est reconnu pour son SEO, son accessibilité et sa flexibilité. Pourtant, avec les optimisations récentes et une approche unifiée pour mobile, web et desktop, Flutter Web tend à démontrer que, bien configuré et optimisé, il peut rivaliser avec React sur ces critères essentiels. Cet article détaillé vous propose de comparer les deux technologies à travers une présentation générale, des idées reçues, une méthodologie de benchmark précise, un exemple concret, des résultats chiffrés et une analyse approfondie.
 
----
-
 # 1. Présentation des technologies
 
 ## Flutter Web
@@ -13,8 +11,6 @@ Flutter Web, développé par Google, permet de créer des applications interacti
 ## React
 
 React, développé par Facebook, repose sur une architecture basée sur le Virtual DOM, ce qui facilite l’indexation par les moteurs de recherche et l’accessibilité grâce à l’utilisation d’éléments HTML sémantiques. Sa large adoption, son écosystème mature et sa flexibilité en font un choix privilégié pour des applications web où la rapidité de chargement et le SEO sont déterminants.
-
----
 
 # 2. Idées reçues sur Flutter Web
 
@@ -83,8 +79,6 @@ Insérer et mettre à jour dynamiquement les balises meta (title, description, O
 
 Déployer l’application sur un hébergement performant et utiliser un réseau de diffusion de contenu (CDN) pour servir les assets à partir de serveurs proches de l’utilisateur, réduisant ainsi la latence et améliorant la vitesse de chargement.
 
----
-
 # 3. Méthodologie de Benchmark et Outils Utilisés
 
 Pour comparer Flutter Web et React, nous avons mis en place une méthodologie rigoureuse, reposant sur les outils suivants :
@@ -103,8 +97,6 @@ Pour comparer Flutter Web et React, nous avons mis en place une méthodologie ri
 
 Cette approche permet d’obtenir des mesures précises sur chaque critère afin de comparer objectivement les deux solutions.
 
----
-
 # 4. Exemple Concret : Création d’un Site Minimal en Flutter Web et en React
 
 Pour illustrer notre analyse, nous avons développé deux versions d’un site minimal :
@@ -115,8 +107,6 @@ Le site est construit avec une interface simple composée d’un header, d’un 
 Le même site est réalisé en React, avec une architecture basée sur des composants fonctionnels et une structure HTML sémantique (balises `<header>`, `<main>`, `<footer>`). L’utilisation d’outils tels que Next.js permet également de bénéficier d’un rendu côté serveur pour améliorer le SEO.
 
 Ces deux versions ont été déployées sur des environnements identiques et testées sur différents navigateurs et conditions de réseau pour garantir la reproductibilité des résultats.
-
----
 
 # 5. Résultats des Benchmarks Chiffrés
 
@@ -190,8 +180,6 @@ Ces deux versions ont été déployées sur des environnements identiques et tes
 
 Les tests répétés sur plusieurs environnements ont démontré que, malgré des différences de rendu initial, les deux technologies peuvent être optimisées pour offrir une expérience utilisateur et une sécurité comparables.
 
----
-
 # 6. Analyse Comparative
 
 ## Forces et Limites
@@ -214,8 +202,6 @@ Les tests répétés sur plusieurs environnements ont démontré que, malgré de
 ## Impact sur le SEO, l’Accessibilité et la Sécurité
 
 Grâce à une configuration soignée, Flutter Web peut surmonter ses inconvénients initiaux. L’utilisation de techniques de pré-rendu, de balises meta dynamiques et du widget *Semantics* permet d’atteindre un niveau SEO et d’accessibilité proche de celui offert par React. En termes de sécurité, les deux frameworks reposent sur des pratiques de développement standard et, lorsqu’ils sont correctement configurés, offrent des niveaux de protection similaires.
-
----
 
 # 7. Conclusion et Recommandations
 
