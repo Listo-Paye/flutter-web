@@ -187,7 +187,7 @@ Les tests répétés sur plusieurs environnements ont démontré que, malgré de
 - **Flutter Web**
     - *Forces* :
         - Partage de code entre mobile, web et desktop, ce qui réduit considérablement le temps de développement pour des applications multi-plateformes.
-        - Excellente fluidité et animation grâce à son moteur Skia.
+        - Excellente fluidité et animation grâce à son moteur Impeller.
         - Possibilité d’optimisation poussée via lazy loading et autres techniques modernes.
     - *Limites* :
         - Taille initiale plus importante, impactant potentiellement le temps de chargement.
