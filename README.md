@@ -182,38 +182,4 @@ Les tests répétés sur plusieurs environnements ont démontré que, malgré de
 
 # 6. Analyse Comparative
 
-## Forces et Limites
-
-- **Flutter Web**
-    - *Forces* :
-        - Partage de code entre mobile, web et desktop, ce qui réduit considérablement le temps de développement pour des applications multi-plateformes.
-        - Excellente fluidité et animation grâce à son moteur Impeller.
-        - Possibilité d’optimisation poussée via lazy loading et autres techniques modernes.
-    - *Limites* :
-        - Taille initiale plus importante, impactant potentiellement le temps de chargement.
-        - Rendu basé sur canvas qui nécessite des optimisations supplémentaires pour le SEO et l’accessibilité.
-- **React**
-    - *Forces* :
-        - Rendu natif HTML, facilitant l’indexabilité par les moteurs de recherche et la conformité aux standards d’accessibilité.
-        - Écosystème mature et vaste communauté offrant de nombreux outils et bibliothèques.
-    - *Limites* :
-        - Développement purement web, nécessitant parfois des ajustements pour le partage de code avec des applications mobiles.
-
-## Impact sur le SEO, l’Accessibilité et la Sécurité
-
-Grâce à une configuration soignée, Flutter Web peut surmonter ses inconvénients initiaux. L’utilisation de techniques de pré-rendu, de balises meta dynamiques et du widget *Semantics* permet d’atteindre un niveau SEO et d’accessibilité proche de celui offert par React. En termes de sécurité, les deux frameworks reposent sur des pratiques de développement standard et, lorsqu’ils sont correctement configurés, offrent des niveaux de protection similaires.
-
-# 7. Conclusion et Recommandations
-
-Les benchmarks et l’analyse comparative présentés montrent qu’avec des optimisations appropriées, **Flutter Web peut atteindre des performances équivalentes à celles de React** en termes de fluidité, de temps de réponse, de SEO, d’accessibilité et de sécurité. La clé réside dans l’application rigoureuse des meilleures pratiques :
-
-- **Pour Flutter Web** :
-    - Implémenter le lazy loading, le tree shaking et optimiser la taille des assets.
-    - Utiliser le widget *Semantics* et ajouter des attributs ARIA pour améliorer l’accessibilité.
-    - Mettre en place des stratégies de pré-rendu et des balises meta dynamiques pour améliorer le SEO.
-- **Pour React** :
-    - Exploiter son rendu natif HTML et la vaste bibliothèque de composants pour maintenir une excellente indexabilité et accessibilité, tout en bénéficiant d’un écosystème mature.
-
-**En conclusion**, le choix entre Flutter Web et React dépendra du contexte du projet. Pour des applications nécessitant un partage de code important entre mobile et web, Flutter Web représente une solution prometteuse. Pour des sites principalement orientés contenu et fortement dépendants du SEO natif, React reste une option éprouvée.
-
-Ces résultats invitent à repenser les idées reçues et à envisager Flutter Web non pas comme une solution inférieure, mais comme une alternative compétitive, à condition d’investir dans une phase d’optimisation technique adaptée.
+[WIP]
