@@ -17,8 +17,6 @@ class _PieChartImplState extends State<PieChartImpl> {
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-
     return PieChartWidget(
       data: widget.data,
       touchedIndex: _touchedIndex,
@@ -51,8 +49,6 @@ class PieChartWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-
     return Row(
       children: [
         Expanded(

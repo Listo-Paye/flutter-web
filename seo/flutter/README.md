@@ -1,4 +1,4 @@
-# flutter_dashboard_benchmark
+# news_paper
 
 A new Flutter project.
 
