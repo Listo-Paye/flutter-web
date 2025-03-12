@@ -122,14 +122,34 @@ Ces deux versions ont été déployées sur des environnements identiques et tes
 
 ### Résultats
 
-- **Temps de Chargement Initial**
-    - *React* :
-    - *Flutter Web* (optimisé via lazy loading et tree shaking) :
-- **Fluidité des Animations**
-    - FPS :
-    - 
+| Métrique                       | Flutter Web | ReactJS  |
+|--------------------------------|-------------|----------|
+| Temps de chargement initial    | ~1.08 s     | ~1.06 s  |
+| First Contentful Paint (FCP)   | ~0.3 s      | ~0.6 s   |
+| Speed Index                    | ~0.8 s      | ~1.2 s   |
+| Total Blocking Time            | 60 ms       | 0 ms     |
+| Fluidité des animatyions (FPS) | ~120 FPS    | ~120 FPS |
+| Consommation mémoire moyenne   | ~30 Mo      | ~18 Mo   |
+| Taille totale des bundles      | ~3.4 Mo     | ~1.2 Mo  |
 
-## SEO **(Search Engine Optimization)**
+Les résultats du benchmark démontrent que, globalement, Flutter Web et ReactJS offrent des performances très comparables pour la majorité des projets.
+
+- **Temps de chargement initial :** Les deux frameworks se situent autour de 1,08 s pour Flutter Web et 1,06 s pour ReactJS, indiquant une réactivité similaire dès le lancement de l'application.
+- **Première peinture du contenu (FCP) et Speed Index :** Flutter Web affiche un avantage avec un FCP à environ 0,3 s et un Speed Index à 0,8 s, contre 0,6 s et 1,2 s pour ReactJS. Ces différences suggèrent que Flutter pourrait offrir une première impression légèrement plus rapide, même si l'impact sur l'expérience globale reste modeste.
+- **Temps de blocage total et consommation mémoire :** ReactJS se distingue par un Total Blocking Time nul et une consommation mémoire moindre (~18 Mo contre ~30 Mo pour Flutter Web). Cette consommation plus grande de Flutter semble liée à son rendu sur canvas, il s'agit là surement du prix à payer pour le pixel perfect.
+- **Fluidité des animations :** Les deux technologies offrent une fluidité d'animation équivalente (~120 FPS), garantissant une expérience visuelle fluide pour l'utilisateur.
+
+En conclusion, même si Flutter Web présente quelques avantages en termes de rapidité de rendu initial, et ReactJS montre une meilleure gestion des ressources, ces différences demeurent relativement mineures. Pour la majorité des projets, les performances des deux frameworks sont globalement équivalentes et le choix entre l’un ou l’autre pourra être principalement orienté par des critères fonctionnels ou de préférences en termes de développement plutôt que par une disparité notable des performances.
+
+Bien que ce benchmark limite volontairement les outils extérieurs pour se concentrer sur les capacités intrinsèques de
+Flutter Web et ReactJS, il est possible d'envisager à terme des compléments tels que :
+
+- **Flutter Web** : utilisation de compilation WebAssembly (WASM) et pré-rendu statique.
+- **ReactJS** : intégration de solutions comme NextJS pour le Server Side Rendering (SSR).
+
+Vous pourrez trouver les détails de l'analyse comparative dans la section dédiée aux [Performances](./performances).
+
+## SEO **(Search Engine Optimization)**
 
 **Objectif :** Évaluer la capacité de l’application à être correctement indexée par les moteurs de recherche et à fournir un contenu structuré et sémantique.
 
