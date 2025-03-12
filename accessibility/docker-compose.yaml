@@ -1,0 +1,12 @@
+services:
+  reactjs:
+    build:
+      context: ./reactjs
+    ports:
+      - "3001:80"
+
+  flutter_web:
+    build:
+      context: ./flutter
+    ports:
+      - "3002:80"
