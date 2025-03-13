@@ -6,6 +6,9 @@
       <excludeFolder url="file://$MODULE_DIR$/performances/flutter/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/performances/flutter/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/performances/flutter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/accessibility/flutter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/accessibility/flutter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/accessibility/flutter/build" />
       <excludeFolder url="file://$MODULE_DIR$/seo/flutter/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/seo/flutter/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/seo/flutter/build" />

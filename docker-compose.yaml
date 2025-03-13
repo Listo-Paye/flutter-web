@@ -1,0 +1,36 @@
+services:
+  perf-reactjs:
+    build:
+      context: ./performances/reactjs
+    ports:
+      - "3001:80"
+
+  perf-flutter_web:
+    build:
+      context: ./performances/flutter
+    ports:
+      - "3002:80"
+      -
+  seo-reactjs:
+    build:
+      context: ./seo/reactjs
+    ports:
+      - "3003:80"
+
+  seo-flutter_web:
+    build:
+      context: ./seo/flutter
+    ports:
+      - "3004:80"
+      -
+  a11y-reactjs:
+    build:
+      context: ./accessibility/reactjs
+    ports:
+      - "3005:80"
+
+  a11y-flutter_web:
+    build:
+      context: ./accessibility/flutter
+    ports:
+      - "3006:80"

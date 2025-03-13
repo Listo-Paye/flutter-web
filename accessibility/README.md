@@ -105,6 +105,43 @@ La méthodologie d’évaluation repose sur plusieurs axes :
 |-----------------------|-------------|---------|
 | Indicateur Lighthouse | 100         | 92      |
 
+### 5.1. Structure Sémantique et Attributs ARIA
+
+- **Balises sémantiques**  
+  Les deux versions utilisent des balises sémantiques pour structurer le contenu, avec une préférence pour les éléments
+  HTML natifs dans ReactJS et les widgets *Semantics* dans Flutter Web.
+- **Attributs ARIA**  
+  Les rôles et attributs ARIA sont correctement appliqués dans les deux cas, facilitant l’interprétation des éléments
+  interactifs.
+- **Conformité**  
+  Les deux versions obtiennent un score élevé en termes de structure sémantique et d’utilisation des attributs ARIA.
+
+### 5.2. Navigation et Interaction
+
+- **Navigation au clavier**  
+  La navigation au clavier est fluide et intuitive dans les deux versions, avec un focus visuel bien géré.
+- **Labels et textes alternatifs**  
+  Les labels et textes alternatifs sont clairs et explicites, garantissant une bonne compréhension des éléments
+  interactifs.
+- **Conformité**  
+  Les tests de navigation et d’interaction révèlent une accessibilité optimale dans les deux versions.
+- **Focus visuel**  
+  Le focus visuel est correctement géré, avec des indicateurs visuels clairs et bien définis.
+- **Conformité**  
+  Les indicateurs de focus sont conformes aux normes d’accessibilité.
+
+### 5.3. Conformité aux Normes WCAG
+
+- **Analyse automatisée**  
+  Les rapports de Google Lighthouse, axe et WAVE indiquent une conformité élevée aux normes WCAG dans les deux versions.
+- **Tests manuels**  
+  Les tests manuels confirment la bonne accessibilité des composants et des interactions, avec une expérience utilisateur
+  optimale pour les utilisateurs en situation de handicap.
+- **Conformité**  
+  Les deux versions respectent globalement les normes WCAG. Exception faite de Flutter Web qui désactive le zooming/scaling de la page, d'où sa note Lighthouse plus basse.
+  Une issue a été ouverte pour corriger ce problème ([Issue #97305](https://github.com/flutter/flutter/issues/97305)).
+
+
 ---
 
 ## 6. Recommandations et Conclusion

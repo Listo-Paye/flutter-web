@@ -128,21 +128,38 @@ suivants :
 Cette approche permet d’obtenir des mesures précises sur chaque critère afin de comparer objectivement les deux
 solutions.
 
-# 4. Exemple Concret : Création d’un Site Minimal en Flutter Web et en React
+# 4. Exemples Concrets
 
-Pour illustrer notre analyse, nous avons développé deux versions d’un site minimal :
+Pour chaque axe d’évaluation, nous avons développé des applications types pour Flutter Web et React, en nous concentrant sur des cas d’usage réalistes.
 
-- **Version Flutter Web**
-  Le site est construit avec une interface simple composée d’un header, d’un contenu interactif et d’un footer. Grâce à
-  l’utilisation du widget *Semantics* et d’une gestion fine des assets (lazy loading, compression d’images), nous avons
-  optimisé le temps de chargement et amélioré l’indexabilité.
-- **Version React**
-  Le même site est réalisé en React, avec une architecture basée sur des composants fonctionnels et une structure HTML
-  sémantique (balises `<header>`, `<main>`, `<footer>`). L’utilisation d’outils tels que Next.js permet également de
-  bénéficier d’un rendu côté serveur pour améliorer le SEO.
+- **Performance et Fluidité** : Application interactive avec des graphiques et des animations.
+- **SEO** : Site d’actualités avec des articles et des balises méta.
+- **Accessibilité** : Formulaire complet avec des interactions accessibles.
+- **Sécurité** : Portail avec authentification et communication sécurisée avec une API.
 
-Ces deux versions ont été déployées sur des environnements identiques et testées sur différents navigateurs et
-conditions de réseau pour garantir la reproductibilité des résultats.
+Ces exemples permettent de tester les capacités intrinsèques de chaque technologie et de mesurer leur efficacité dans des contextes variés.
+Nous avons ensuite soumis ces applications à des benchmarks chiffrés pour obtenir des résultats précis et comparables.
+
+Vous pouvez reproduire chez vous et tester par vous même grace aux instructions détaillées dans les sections dédiées à chaque axe d'évaluation.
+
+Pour installer les sites web sur votre poste, suivez les instructions suivantes :
+```shell
+docker compose -p benchmarks up -d
+```
+
+Vous aurez accès aux applications :
+- Performances et Fluidité
+    - [Flutter Web](http://localhost:3002)
+    - [ReactJS](http://localhost:3001)
+- SEO
+    - [Flutter Web](http://localhost:3004)
+    - [ReactJS](http://localhost:3003)
+- Accessibilité
+    - [Flutter Web](http://localhost:3006)
+    - [ReactJS](http://localhost:3005)
+- Sécurité
+    - [Flutter Web](http://localhost:3008)
+    - [ReactJS](http://localhost:3007)
 
 # 5. Résultats des Benchmarks Chiffrés
 
@@ -151,14 +168,15 @@ conditions de réseau pour garantir la reproductibilité des résultats.
 **Objectif :** Mesurer la rapidité du chargement, la réactivité de l’interface et la fluidité des animations sous des
 scénarios interactifs intensifs.
 
+**Détails :** [Performances](./performances)
+
 ### **Application interactive / Dashboard en temps réel**
 
-- L’application doit afficher un tableau de bord avec des graphiques interactifs, des animations (par exemple,
-  transitions, rafraîchissement de données en continu) et des éléments de navigation dynamique.
-- Le benchmark devra mesurer le temps de chargement initial, le temps de réponse lors de l’interaction (clics, scrolls)
-  et le taux de rafraîchissement (FPS) pendant l’exécution des animations.
-- La consommation CPU et mémoire sera surveillée pendant des scénarios d’utilisation intensive (mises à jour fréquentes
-  de données, animations complexes).
+Le projet choisi pour cette comparaison est une application web représentant un tableau de bord interactif en temps
+réel, permettant la visualisation dynamique de données actualisées fréquemment. Ce choix est motivé par l'exigence
+élevée en fluidité, réactivité et performances graphiques nécessaires à ce type d'application, ce qui en fait un
+excellent candidat pour révéler les forces et les faiblesses de Flutter Web et ReactJS.
+
 
 ### Résultats
 
@@ -205,14 +223,19 @@ Vous pourrez trouver les détails de l'analyse comparative dans la section dédi
 **Objectif :** Évaluer la capacité de l’application à être correctement indexée par les moteurs de recherche et à
 fournir un contenu structuré et sémantique.
 
-### **Application type blog / site d’actualités**
+**Détails :** [SEO](./seo)
 
-- Créer une application affichant du contenu textuel riche (articles, actualités ou billets de blog) avec une structure
-  de pages statiques et dynamiques.
-- L’architecture doit inclure des éléments SEO clés : balises méta (title, description), en-têtes (H1, H2…), URL
-  sémantiques et un contenu facilement crawlable par les robots (moteurs de recherche).
-- Le benchmark consistera à mesurer, via des outils comme Lighthouse ou Google Search Console, la vitesse de rendu,
-  l’indexabilité, et le score SEO global.
+### Application type blog / site d’actualités
+
+Le projet de référence est une application web de type blog ou portail d’actualités, conçue pour offrir aux utilisateurs un contenu riche et structuré, tout en garantissant une indexabilité optimale par les moteurs de recherche. Dans les deux versions – Flutter Web et ReactJS – l'objectif est de satisfaire aux mêmes exigences SEO, en produisant des pages claires, sémantiques et aisément crawlables.
+
+Chaque version intègre :
+- **Une architecture identique** : Un header, un contenu principal riche en articles et actualités, et un footer, formant une structure cohérente et facile à indexer.
+- **Une gestion soignée des URL** : Des URL bien structurées, accompagnées de la génération d’un sitemap et d’un fichier robots.txt pour faciliter l’exploration par les crawlers.
+- **L’insertion dynamique de balises meta** : Des balises essentielles (title, description, OpenGraph, etc.) intégrées de manière dynamique afin d’optimiser la visibilité et le référencement naturel.
+- **Un rendu client optimisé** : Un HTML généré de façon à respecter une structure sémantique rigoureuse, garantissant que le contenu soit clairement interprété par les moteurs de recherche.
+
+Ainsi, que ce soit avec Flutter Web ou ReactJS, le besoin fondamental reste identique : produire une application dont les pages sont parfaitement adaptées aux exigences SEO, tout en offrant une expérience utilisateur de qualité.
 
 ### Résultats
 
@@ -235,22 +258,47 @@ Les deux versions de l’application ont été testées avec Lighthouse pour év
 **Objectif :** Vérifier que l’application répond aux normes d’accessibilité (navigation au clavier, utilisation de
 lecteurs d’écran, contraste, etc.) et qu’elle offre une expérience inclusive.
 
+**Détails :** [Accessibilité](./accessibility)
+
 ### **Application type formulaire complet ou site e-commerce**
 
-- Développer une application comportant divers éléments interactifs (formulaires de contact, boutons, menus, carrousels)
-  et une navigation accessible.
-- Intégrer des marquages sémantiques et des attributs ARIA (ou équivalents) pour que chaque composant (champs de saisie,
-  liens, boutons) soit identifiable par les outils d’accessibilité.
-- Le benchmark comprendra des tests avec des outils comme axe ou WAVE pour vérifier la navigation au clavier, la
-  lisibilité (contraste des couleurs) et la compatibilité avec des lecteurs d’écran.
+Le projet de référence est une application de gestion de tâches collaboratives, conçue pour permettre aux équipes de
+suivre, organiser et modifier leurs projets de manière fluide et intuitive. Pour chacune des versions – Flutter Web et
+ReactJS – les mêmes exigences d’accessibilité sont appliquées :
+
+- **Architecture harmonisée**  
+  L’interface est structurée autour d’un header, d’un menu de navigation latéral, d’un tableau de bord central affichant
+  les tâches et d’un footer. Cette organisation vise à offrir une navigation claire et cohérente pour tous les
+  utilisateurs.
+
+- **Utilisation de balises sémantiques et d’attributs ARIA**  
+  La version ReactJS s’appuie sur un rendu HTML natif structuré avec des éléments tels que `<header>`, `<nav>`, `<main>`
+  et `<footer>`. La version Flutter Web, quant à elle, intègre des widgets *Semantics* et des attributs personnalisés
+  pour assurer une identification claire des zones interactives et des contenus dynamiques.
+
+- **Interaction et formulaires accessibles**  
+  Les formulaires de création et de modification de tâches, ainsi que les interactions (boutons, menus déroulants,
+  modales) sont conçus pour être navigables au clavier avec des indicateurs de focus bien définis et des labels
+  explicites, garantissant une utilisation aisée par tous.
+
+Ainsi, que ce soit via Flutter Web ou ReactJS, l’objectif est de produire une application de gestion de tâches dont
+l’accessibilité est optimisée dès la conception.
 
 ### Résultats
 
-- **Tests d’Accessibilité**
-    - Les deux versions ont été évaluées avec axe et WAVE.
-    - *React* montre un score élevé grâce à l’utilisation d’éléments natifs.
-    - *Flutter Web*, en dépit de son rendu canvas, peut atteindre des scores proches en configurant correctement les
-      widgets Semantics et en ajoutant des attributs ARIA personnalisés.
+| Métrique              | Flutter Web | ReactJS |
+|-----------------------|-------------|---------|
+| Indicateur Lighthouse | 100         | 92      |
+
+- **Analyse automatisée**  
+  Les rapports de Google Lighthouse, axe et WAVE indiquent une conformité élevée aux normes WCAG dans les deux versions.
+- **Tests manuels**  
+  Les tests manuels confirment la bonne accessibilité des composants et des interactions, avec une expérience utilisateur
+  optimale pour les utilisateurs en situation de handicap.
+- **Conformité**  
+  Les deux versions respectent globalement les normes WCAG. Exception faite de Flutter Web qui désactive le zooming/scaling de la page, d'où sa note Lighthouse plus basse.
+  Une issue a été ouverte pour corriger ce problème ([Issue #97305](https://github.com/flutter/flutter/issues/97305)).
+
 
 ## Sécurité
 

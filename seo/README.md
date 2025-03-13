@@ -6,7 +6,7 @@ Ce document détaille la méthodologie et les résultats d’un benchmark SEO co
 
 ## 1. Objectif du Benchmark SEO
 
-L’objectif est double :
+L’objectif est double :
 - **Analyser l’indexabilité et la structure sémantique** des pages générées par chaque technologie.
 - **Évaluer l’impact des optimisations SEO** appliquées sur un projet de référence, afin de déterminer dans quelle mesure Flutter Web, malgré son rendu sur canvas, peut rivaliser avec ReactJS qui exploite un rendu HTML natif.
 
