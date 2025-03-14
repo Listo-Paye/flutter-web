@@ -10,7 +10,7 @@ services:
       context: ./performances/flutter
     ports:
       - "3002:80"
-      -
+
   seo-reactjs:
     build:
       context: ./seo/reactjs
@@ -22,7 +22,7 @@ services:
       context: ./seo/flutter
     ports:
       - "3004:80"
-      -
+
   a11y-reactjs:
     build:
       context: ./accessibility/reactjs
