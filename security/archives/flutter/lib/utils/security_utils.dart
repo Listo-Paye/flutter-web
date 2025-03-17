@@ -1,14 +1,14 @@
-import 'package:html_escape/html_escape.dart';
+import 'dart:convert';
 
 class SecurityUtils {
   // Sanitize user input to prevent XSS attacks
   static String sanitizeInput(String input) {
     if (input.isEmpty) return input;
-    
+
     // Use HTML escape to prevent XSS
     return HtmlEscape().convert(input);
   }
-  
+
   // Validate input based on field type
   static bool validateInput(String field, String value) {
     switch (field) {
@@ -28,11 +28,10 @@ class SecurityUtils {
         return value.isNotEmpty && value.length <= 500;
     }
   }
-  
+
   // Add security headers to a web page
   static void addSecurityHeaders() {
     // This would be implemented in a real app using a platform channel
     // or other mechanism to interact with the web view
   }
 }
-

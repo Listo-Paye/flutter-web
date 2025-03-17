@@ -9,6 +9,13 @@
             </list>
           </value>
         </entry>
+        <entry key="bfe_design_system">
+          <value>
+            <list>
+              <option value="$USER_HOME$/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="boolean_selector">
           <value>
             <list>
@@ -487,6 +494,7 @@
       <root url="file://$USER_HOME$/flutter/packages/flutter/lib" />
       <root url="file://$USER_HOME$/flutter/packages/flutter_test/lib" />
       <root url="file://$USER_HOME$/flutter/packages/flutter_web_plugins/lib" />
+      <root url="file://$USER_HOME$/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

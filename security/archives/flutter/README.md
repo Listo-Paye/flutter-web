@@ -1,4 +1,4 @@
-# security_example
+# secure_user_management
 
 A new Flutter project.
 
