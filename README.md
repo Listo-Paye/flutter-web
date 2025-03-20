@@ -8,7 +8,7 @@ rivaliser avec React sur ces critères essentiels. Cet article détaillé vous p
 travers une présentation générale, des idées reçues, une méthodologie de benchmark précise, un exemple concret, des
 résultats chiffrés et une analyse approfondie.
 
-# 1. Présentation des technologies
+# Présentation des technologies
 
 ## Flutter Web
 
@@ -25,7 +25,7 @@ les moteurs de recherche et l’accessibilité grâce à l’utilisation d’él
 écosystème mature et sa flexibilité en font un choix privilégié pour des applications web où la rapidité de chargement
 et le SEO sont déterminants.
 
-# 2. Idées reçues sur Flutter Web
+# Idées reçues sur Flutter Web
 
 Nombreux sont ceux qui estiment que Flutter Web ne peut rivaliser avec React en termes de SEO et d’accessibilité, du
 fait de son rendu sur canvas qui masque les balises HTML classiques. De plus, le temps de chargement initial plus lourd
@@ -106,7 +106,7 @@ améliorer le référencement naturel et l’aperçu sur les réseaux sociaux.
 Déployer l’application sur un hébergement performant et utiliser un réseau de diffusion de contenu (CDN) pour servir les
 assets à partir de serveurs proches de l’utilisateur, réduisant ainsi la latence et améliorant la vitesse de chargement.
 
-# 3. Méthodologie de Benchmark et Outils Utilisés
+# Méthodologie de Benchmark et Outils Utilisés
 
 Pour comparer Flutter Web et React, nous avons mis en place une méthodologie rigoureuse, reposant sur les outils
 suivants :
@@ -128,7 +128,7 @@ suivants :
 Cette approche permet d’obtenir des mesures précises sur chaque critère afin de comparer objectivement les deux
 solutions.
 
-# 4. Exemples Concrets
+# Exemples Concrets
 
 Pour chaque axe d’évaluation, nous avons développé des applications types pour Flutter Web et React, en nous concentrant sur des cas d’usage réalistes.
 
@@ -161,7 +161,7 @@ Vous aurez accès aux applications :
     - [Flutter Web](http://localhost:3008)
     - [ReactJS](http://localhost:3007)
 
-# 5. Résultats des Benchmarks Chiffrés
+# Résultats des Benchmarks Chiffrés
 
 ### Performance et Fluidité
 
@@ -325,9 +325,9 @@ mise en place de mesures de sécurité essentielles.
 Les tests répétés sur plusieurs environnements ont démontré que, malgré des différences de rendu initial, les deux
 technologies peuvent être optimisées pour offrir une expérience utilisateur et une sécurité comparables.
 
-# 6. Bonnes Pratiques et Recommandations
+# Bonnes Pratiques et Recommandations
 
-## 1. Performance
+## Performance
 
 ### ReactJS
 - **Optimisation du rendu** : Exploiter le Virtual DOM pour limiter les mises à jour inutiles et utiliser des techniques de code splitting et lazy loading (via Webpack, Vite, etc.) pour charger uniquement le nécessaire.
@@ -339,7 +339,7 @@ technologies peuvent être optimisées pour offrir une expérience utilisateur e
 - **Optimisation du rendu graphique** : Gérer efficacement les *Typed Arrays* et les buffers afin d'assurer un rendu fluide, surtout sur des environnements moins performants.
 - **Réduction de la taille du bundle** : Utiliser le tree shaking et optimiser les assets pour minimiser le poids du bundle initial.
 
-## 2. SEO (Search Engine Optimization)
+## SEO (Search Engine Optimization)
 
 ### ReactJS
 - **Rendu HTML natif** : Bénéficier d'une structure sémantique naturelle en utilisant des balises comme `<header>`, `<main>`, `<footer>`, facilitant l'indexation par les moteurs de recherche.
@@ -351,7 +351,7 @@ technologies peuvent être optimisées pour offrir une expérience utilisateur e
 - **Widgets *Semantics*** : Utiliser ces widgets pour enrichir le rendu de données sémantiques et améliorer l'indexabilité des pages.
 - **Pré-rendu partiel** : Appliquer des stratégies de pré-rendu afin de fournir un contenu structuré et indexable aux moteurs de recherche.
 
-## 3. Accessibilité
+## Accessibilité
 
 ### ReactJS
 - **Utilisation de balises sémantiques et ARIA** : Exploiter le HTML natif et les attributs ARIA pour structurer le contenu de manière claire et accessible.
@@ -363,7 +363,7 @@ technologies peuvent être optimisées pour offrir une expérience utilisateur e
 - **Navigation adaptée** : S'assurer que les éléments interactifs et les formulaires sont facilement navigables via le clavier et disposent de labels explicites.
 - **Validation combinée** : Combiner des tests automatisés et manuels (avec des lecteurs d’écran par exemple) pour garantir la conformité aux normes d’accessibilité.
 
-## 4. Sécurité
+## Sécurité
 
 ### ReactJS
 - **Assainissement des entrées** : Valider et échapper toutes les données utilisateur pour prévenir les attaques XSS et autres injections.
@@ -375,183 +375,19 @@ technologies peuvent être optimisées pour offrir une expérience utilisateur e
 - **Sécurisation du rendu dynamique** : Gérer l’injection dynamique de contenu avec prudence pour prévenir l’insertion de scripts malveillants.
 - **Configuration des headers** : S'assurer, via la configuration côté serveur ou par des API frontales, que les headers de sécurité sont correctement appliqués.
 
-# 7. Comparatif de Vélocité et Qualité de Code (TypeScript vs Dart)
+# Comparatif de Vélocité et Qualité de Code (TypeScript vs Dart)
 
-Dans cette section, nous comparons la vélocité d’écriture et la qualité/lisibilité du code en ReactJS avec TypeScript et Flutter Web avec Dart. Des exemples de code illustrent concrètement les différences et avantages de chaque approche.
+Dans le [document lié à la maintenabilité](maintenability/README.md), vous trouverez un comparatif dédié à la maintenabilité et à la modularité : 
 
-## 7.1. Vélocité d'Écriture
+- **Vélocité d'Écriture** : Flutter Web (Dart) permet un développement plus rapide des interfaces complexes grâce à son hot reload et son approche déclarative, tandis que ReactJS peut introduire plus de boilerplate dans les grands projets.
 
-### ReactJS (TypeScript)
+- **Qualité et Lisibilité du Code** : Dart offre une meilleure cohérence et lisibilité grâce à sa syntaxe uniforme et son typage fort, alors que ReactJS/TypeScript peut devenir plus verbeux à cause de la diversité des patterns.
 
-- **Hot Reload et Écosystème Mature :**  
-  React offre une itération rapide grâce au hot reload, mais la flexibilité de l’écosystème peut mener à l’utilisation de divers patterns et à un certain volume de code pour gérer l’état et la logique métier.
+- **Injection de Dépendance** : Les deux technologies proposent des solutions robustes avec InversifyJS pour React et GetIt/Injectable pour Flutter, permettant une gestion efficace des dépendances.
 
-- **Exemple de composant simple (Counter) :**
+- **Architecture UI** : Encourager une séparation stricte en ReactJS peut introduire un surcoût de complexité dans la mise en place initiale tandis que Flutter (BLoC + Interactor + Router) fournit une structure claire et cohérente, adaptée aux applications complexes et multiplateformes, tout en tirant profit d’un hot reload très efficace.
 
-```tsx
-// Counter.tsx
-import React, { useState } from 'react'
-
-type CounterProps = {
-  initialCount?: number
-};
-
-const Counter: React.FC<CounterProps> = ({ initialCount = 0 }) => {
-  const [count, setCount] = useState(initialCount)
-
-  return (
-    <div>
-      <h1>Counter: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-    </div>
-  )
-}
-
-export default Counter
-```
-
-Cet exemple montre comment, avec quelques lignes de code, on peut rapidement créer un composant interactif. Toutefois, pour des applications plus complexes, l’ajout de contextes, reducers ou librairies tierces peut entraîner une augmentation du boilerplate.
-
-### Flutter Web (Dart)
-
-- **Hot Reload Ultra-Rapide et Uniformité :**  
-  Flutter se distingue par un hot reload très performant et une approche déclarative "tout est widget". Bien que le code puisse sembler verbeux en raison de la composition de widgets, la structure uniforme permet de gagner du temps dans le développement d'interfaces complexes.
-
-- **Exemple de widget simple (Counter) :**
-
-```dart
-// main.dart
-import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Counter Demo',
-      home: CounterPage(),
-    );
-  }
-}
-
-class CounterPage extends StatefulWidget {
-  @override
-  _CounterPageState createState() => _CounterPageState();
-}
-
-class _CounterPageState extends State<CounterPage> {
-  int count = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Counter Demo')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Counter: $count', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () => setState(() => count++),
-              child: Text('Increment'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-```
-
-Avec Flutter, la mise à jour de l’interface est instantanée grâce au hot reload, ce qui accélère les itérations et les ajustements.
-
-## 7.2. Qualité et Lisibilité du Code
-
-### ReactJS (TypeScript)
-
-- **Type Safety et Richesse de l'Écosystème :**  
-  TypeScript renforce la robustesse du code en vérifiant statiquement les types, mais peut parfois introduire du code additionnel, surtout lorsqu’on gère des contextes complexes ou des reducers.
-
-- **Exemple de gestion de contexte avec TypeScript :**
-
-```tsx
-// CounterContext.tsx
-import React, { createContext, useReducer } from 'react'
-
-type State = { count: number }
-type Action = { type: 'increment' } | { type: 'decrement' }
-
-const initialState: State = { count: 0 }
-
-function counterReducer(state: State, action: Action): State {
-  switch (action.type) {
-    case 'increment': return { count: state.count + 1 }
-    case 'decrement': return { count: state.count - 1 }
-    default: return state
-  }
-}
-
-export const CounterContext = createContext<{
-  state: State;
-  dispatch: React.Dispatch<Action>;
-}>({ state: initialState, dispatch: () => null })
-
-export const CounterProvider: React.FC = ({ children }) => {
-  const [state, dispatch] = useReducer(counterReducer, initialState)
-  return (
-    <CounterContext.Provider value={{ state, dispatch }}>
-      {children}
-    </CounterContext.Provider>
-  )
-}
-```
-
-Cet exemple montre que même si le code est bien typé, la diversité des patterns et la nécessité d’ajouter des wrappers pour la gestion d’état peuvent complexifier le code.
-
-### Flutter Web (Dart)
-
-- **Syntaxe Cohérente et Orientée Objet :**  
-  Dart impose une structure uniforme et une syntaxe claire. La réutilisation des widgets est simple et le code tend à être très lisible grâce à une approche déclarative.
-
-- **Exemple de widget réutilisable (CustomButton) :**
-
-```dart
-// custom_button.dart
-import 'package:flutter/material.dart';
-
-class CustomButton extends StatelessWidget {
-  final String label;
-  final VoidCallback onPressed;
-
-  const CustomButton({required this.label, required this.onPressed});
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      child: Text(label),
-    );
-  }
-}
-```
-
-L’utilisation de ce widget est intuitive et garantit une uniformité à travers l’application, facilitant la maintenance et la lecture du code.
-
-## Conclusion
-
-- **Vélocité d'Écriture :**  
-  Grâce à son hot reload et à son approche déclarative, Flutter Web (Dart) permet de développer rapidement des interfaces complexes. Bien que ReactJS (TypeScript) offre également une itération rapide, la flexibilité de son écosystème peut introduire une surcharge de boilerplate dans des projets de grande envergure.
-
-- **Qualité et Lisibilité :**  
-  Dart, avec sa syntaxe uniforme et son typage fort, favorise un code plus cohérent et lisible, simplifiant la maintenance. En revanche, ReactJS avec TypeScript, malgré ses avantages en termes de sécurité de type, peut parfois devenir verbeux en raison de la diversité des patterns et des librairies tierces.
-
-En résumé, pour des équipes cherchant à accélérer le développement d’interfaces riches et cohérentes sur plusieurs plateformes, Flutter Web offre un avantage significatif en termes de vélocité et de lisibilité du code. Pour les projets web traditionnels, ReactJS reste une solution robuste, bien que potentiellement plus complexe à standardiser à grande échelle.
-
-# 8. Conclusion Globale
-
-Le comparatif réalisé entre Flutter Web et ReactJS démontre que, malgré des différences intrinsèques liées à leur approche (rendu sur canvas vs rendu HTML natif), les deux technologies peuvent être optimisées pour offrir des performances, un SEO, une accessibilité, une sécurité et une lisibilité de haut niveau. La sélection entre ces solutions se fait souvent en fonction des exigences du projet, de l’expérience des équipes et de la vision à long terme en termes de développement multiplateforme.
+- **Tests et Automatisation** : ReactJS offre des outils matures comme Jest, React Testing Library et Cypress, facilitant la mise en place d'une suite complète de tests unitaires, d'intégration et E2E. Pour Flutter Web, le framework propose une intégration native des tests unitaires et de widgets via `flutter_test` et des solutions modernes pour les tests d'intégration avec `integration_test`.
 
 ## Bilan Comparatif
 
@@ -568,7 +404,7 @@ Le comparatif réalisé entre Flutter Web et ReactJS démontre que, malgré des 
   Les deux technologies, si elles s’appuient sur les bonnes pratiques (assainissement des données, configuration des headers de sécurité, etc.), peuvent offrir une robustesse équivalente face aux vulnérabilités courantes comme les attaques XSS et les injections.
 
 - **Vélocité et Lisibilité du Code**  
-  Flutter Web avec Dart offre une syntaxe uniforme et orientée objet, permettant de développer rapidement grâce à un hot reload efficace et à une structure déclarative cohérente. ReactJS avec TypeScript offre une sécurité de typage renforcée, mais la diversité des patterns et la nécessité d’intégrer plusieurs librairies peuvent augmenter la verbosité du code.
+  ReactJS avec TypeScript offre une grande flexibilité grâce à son écosystème mature et son rendu HTML natif, mais peut engendrer du boilerplate complexe pour gérer la logique métier. En revanche, Flutter Web avec Dart, grâce à son hot reload ultra-rapide et sa syntaxe uniforme, permet de développer rapidement des interfaces riches et cohérentes sur plusieurs plateformes.
 
 ## Proposition de Stack Technique
 
@@ -588,13 +424,14 @@ Pour répondre aux besoins de performance, SEO, accessibilité, sécurité et li
 ### Stack Technique ReactJS
 
 - **HTTP & Communication API**  
-  - Utiliser [Axios](https://axios-http.com/) avec une abstraction inspirée de Retrofit pour organiser les appels API.
+  - Utiliser [Axios](https://axios-http.com/) [axios-retrofit](https://www.npmjs.com/package/axios-retrofit) pour organiser les appels API.
 - **Authentification**  
-  - Intégrer un client OIDC comme [oidc-client-js](https://github.com/IdentityModel/oidc-client-js) pour gérer OAuth2.
+  - Intégrer un client OIDC comme [react-oidc](https://github.com/AxaFrance/oidc-client/tree/main/packages/react-oidc#readme.md) pour gérer OAuth2.
 - **Injection de Dépendance**  
   - Employer des outils comme [InversifyJS](https://inversify.io/) ou tirer parti du Context API combiné aux hooks pour une injection légère et modulaire.
+  - Utiliser [RxJS](https://www.npmjs.com/package/rxjs) pour les streams des singletons qui en ont besoin
 - **Gestion d'État**  
-  - Utiliser des librairies telles que Redux, Recoil ou React Query pour gérer l’état de manière centralisée ou via des hooks.
+  - Utiliser des librairies telles que React Query pour gérer l’état de manière centralisée ou via des hooks.
 
 ## Architecture Clean Optimale pour Chaque Stack
 
