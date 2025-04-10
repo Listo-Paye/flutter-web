@@ -1,0 +1,57 @@
+flavors:
+  prod:
+    app:
+      name: "Production"
+    android:
+      applicationId: "pro.listo.flutter_starter_kit"
+    ios:
+      bundleId: "pro.listo.flutter_starter_kit"
+    macos:
+      bundleId: "pro.listo.flutter_starter_kit"
+  preprod:
+    app:
+      name: "Preprod"
+    android:
+      applicationId: "pro.listo.flutter_starter_kit.preprod"
+    ios:
+      bundleId: "pro.listo.flutter_starter_kit.preprod"
+    macos:
+      bundleId: "pro.listo.flutter_starter_kit.preprod"
+  recette:
+    app:
+      name: "Recette"
+    android:
+      applicationId: "pro.listo.flutter_starter_kit.recette"
+    ios:
+      bundleId: "pro.listo.flutter_starter_kit.recette"
+    macos:
+      bundleId: "pro.listo.flutter_starter_kit.recette"
+  integration:
+    app:
+      name: "Integration"
+    android:
+      applicationId: "pro.listo.flutter_starter_kit.integration"
+    ios:
+      bundleId: "pro.listo.flutter_starter_kit.integration"
+    macos:
+      bundleId: "pro.listo.flutter_starter_kit.integration"
+  dev:
+    app:
+      name: "Dev"
+    android:
+      applicationId: "pro.listo.flutter_starter_kit.dev"
+    ios:
+      bundleId: "pro.listo.flutter_starter_kit.dev"
+    macos:
+      bundleId: "pro.listo.flutter_starter_kit.dev"
+  test:
+    app:
+      name: "Test"
+    android:
+      applicationId: "pro.listo.flutter_starter_kit.test"
+    ios:
+      bundleId: "pro.listo.flutter_starter_kit.test"
+    macos:
+      bundleId: "pro.listo.flutter_starter_kit.test"
+
+ide: idea

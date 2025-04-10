@@ -1,6 +1,6 @@
 {
-    "name": "security_example",
-    "short_name": "security_example",
+    "name": "secure_user_management",
+    "short_name": "secure_user_management",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

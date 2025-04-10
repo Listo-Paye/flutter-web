@@ -18,6 +18,9 @@
       <excludeFolder url="file://$MODULE_DIR$/security/flutter_web/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/security/flutter_web/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/security/flutter_web/build" />
+      <excludeFolder url="file://$MODULE_DIR$/security/archives/flutter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/security/archives/flutter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/security/archives/flutter/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
