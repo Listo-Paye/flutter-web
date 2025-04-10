@@ -407,7 +407,7 @@ Malgré sa popularité, ReactJS montre ses limites dès lors que l’on tente de
 
 - **Expérience développeur exceptionnelle** : le hot reload natif, combiné à un écosystème de tooling intégré (DevTools, Flutter Inspector, etc.), permet un développement itératif rapide, sans perte d’état, même dans des cas complexes.
 
-- **Tests automatisés de haut niveau** : Flutter permet d’écrire des tests unitaires, d’intégration et BDD (notamment avec `gherkin`, `flutter_gherkin`, ou `patrol`) dans un environnement homogène. La génération de steps et la factorisation sont largement automatisées, ce qui permet une couverture de tests robuste et facile à maintenir.
+- **Tests automatisés de haut niveau** : Flutter permet d’écrire des tests unitaires, d’intégration et BDD (notamment avec `bdd_widget_test`) dans un environnement homogène. La génération de steps et la factorisation sont largement automatisées, ce qui permet une couverture de tests robuste et facile à maintenir.
 
 ## 3. Recommandation stratégique
 
